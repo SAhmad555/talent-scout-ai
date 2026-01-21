@@ -1,0 +1,39 @@
+@baseUrl = http://localhost:5053/api/users
+
+### 🔹 GET - listar todos os usuários
+GET {{baseUrl}}
+Accept: application/json
+
+###
+
+### 🔹 GET - buscar usuário por ID
+GET {{baseUrl}}/1
+Accept: application/json
+
+###
+
+### 🔹 POST - criar usuário
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "name": "Helio Brandao",
+  "email": "helio@email.com"
+}
+
+###
+
+### 🔹 PUT - atualizar usuário
+PUT {{baseUrl}}/1
+Content-Type: application/json
+
+{
+  "name": "Helio Brandao Atualizado",
+  "email": "helio.novo@email.com"
+}
+
+###
+
+### 🔹 DELETE - remover usuário
+DELETE {{baseUrl}}/1
+Accept: application/json
